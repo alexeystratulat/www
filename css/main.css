@@ -1,0 +1,483 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+body { 
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: #3700db;
+    background: #141414;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    
+}
+
+.wrapper {
+    background: rgb(20, 20, 20);
+   
+    width: 100%;
+
+}
+
+.container {
+    width: 1500px;
+    margin: 0 auto;
+}
+
+header {
+    padding: 50px 0;
+}
+header .logo, footer .blocks .logo {    
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 800;
+
+}
+header nav {
+    float: right;
+    width: 50%;
+
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+header nav ul li a {color: #fd702eec;}
+header nav ul li:not(.active):not(.btn) a:hover {
+    border-bottom: 5px solid #c29501;
+}
+header nav ul li.btn a, .email .block button {
+    background: #00439b;
+    padding: 9px 17px;
+    border-radius: 5px;
+    transition: all 500ms ease;
+
+}
+header nav ul li.btn a:hover, .email .block button:hover {
+    background: #ffe15b;
+}
+
+.container  h1{
+    padding: -5px;
+}
+.container  button{
+    padding: 15px 20x;
+    margin-bottom: 20px;
+}
+
+.trending {
+    padding-top: 100px;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.trending .see-all, .projects .see-all {
+    
+    background-size: 20px;
+    color: #fff;
+    background: #0d63d4;
+    border-radius: 4px;
+    padding: 15px 20x;
+    float: right;
+    display: block;
+    
+
+}
+.trending .see-all:hover, .projects .see-all:hover { 
+    transform: scale(1.1);
+}
+
+
+.trending .games {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 50px 10px;
+}
+.container .games img {
+    width: 90%;
+    
+}
+
+.trending .games span {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+
+}
+.trending .games span img {
+    width: 6%;
+    position: relative;
+    top: 3px;
+    margin-right: 10px;
+}
+
+.hero--info .btn, .hero-about .info .btn {
+    width: 190px;
+    background: #f78605;
+    color: #fff;
+    border-radius: 40px;
+    padding: 10px 20px;
+    border: 0;
+    transition: all 500ms ease;
+    font-size: 17px;
+}
+.hero--info .btn:hover,
+.hero-about .info .btn:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+
+.big-text {
+    padding: 50px 0;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+}
+.banner {
+    padding: 80px 0;
+    
+}
+.banner h3 {
+    
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 3px;
+}
+.banner p {
+    
+    line-height: 170%;
+    margin-bottom: 3px;
+    width: 550px;
+}
+.banner img {
+    padding: 3% 10%;
+    width: 80%;
+    margin-bottom: 30px;
+}
+
+.features {
+    background: url('/img/starwars.png') no-repeat center center fixed;
+    background-size: cover;
+    padding: 80px;
+
+}
+.features h3, .features p {
+    margin-bottom: 20px;
+    text-align: center;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.features h3 {
+    font-size: 30px;
+}
+.features .info {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.features .info .block {
+    text-align: center;
+    width: 10%;
+    margin: 20px 2%; 
+
+}
+.features .info .block img {
+    
+    width: 50px;
+    margin-bottom: 15px;
+}
+
+.projects {
+    padding: 100px 0px;
+    
+}
+
+.projects h3 {
+    font-size: 30px;
+    text-align: center;
+}
+
+.projects p {
+    margin: 40px 0;
+    text-align: center;
+}
+
+.projects .images {
+    
+    width: 25%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 25px;
+}
+.projects .images img {
+    padding: 15%;
+}    
+.projects .see-all {
+    float: none;
+    text-align: center;
+    margin: 0 auto;
+    width: 70px;
+    font-size: 20px;
+}
+
+.email {
+    padding-bottom: 120px;
+}
+.email h3 {
+    margin-top: 60px;
+    font-size: 30px;
+}
+.email .block {
+    background: #7999c2;
+    margin-top: 30px;
+    border-radius: 10px;
+    padding: 40px 3%;
+    width: 94%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.email .block h4 {
+    font-size: 30px;
+    font-weight: 500;
+}
+.email .block p {
+    width: 500px;
+}
+.email .block input {
+    background: #fff;
+    outline: none;
+    border: 0;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    padding: 10px 40px;
+    position: relative;
+    right: -100px;
+    z-index: 1;
+    padding-right: 120px;
+}
+.email .block button {
+    cursor: pointer;
+    border: 0;
+    padding: 11px 20px;
+    position: relative;
+    z-index: 2;
+    color: #fff;
+
+}
+
+.hero-about {
+    position: relative;
+}
+
+.hero-about .info {
+    width: 500px;
+    padding: 290px 0;
+}
+
+.hero-about .info h1 {
+    margin-bottom: 15px;
+    font-size: 30px;
+}
+.hero-about .info .btn {
+    margin-top: 20px;
+}
+
+.hero-about img {
+    width: 65%;
+    position: absolute;
+    right: -150px;
+    top: 0;
+}
+
+.work {
+    padding: 80px 0;
+
+}
+.work h2 {
+    font-size: 25px;
+    margin-bottom: 50px;
+
+}
+.work .blocks {
+    display: flex;
+    justify-content: space-between;
+}
+
+.work .blocks .block {
+    width: 25%;
+    border-radius: 10px;
+    padding: 50px 35px;
+    background: #b3c8e2;
+}
+.work .blocks .block h3 {
+font-size: 20px;
+margin: 20px 0;
+
+}
+
+.work .blocks .block .badge {
+    border-radius: 7px;
+    padding: 10px 20px;
+    
+}
+
+
+.work .blocks .block .badge.purple {
+    background: #7c6fa1;
+}
+
+.work .blocks .block .badge.brown {
+    background: #976e52;
+}
+
+.work .blocks .block .badge.green {
+    background: #0e851e;
+}
+
+
+
+
+.hero-contact h1 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.hero-contact p {
+    text-align: center;
+}
+.hero-contact img {
+    width: 95%;
+    margin: 80px 5%;
+}
+
+
+.feedback {
+    padding: 70px 0;
+    background: #07011f;
+
+}
+.feedback h2 {
+    text-align: center;
+    font-weight: 500;
+    font-size: 32px;
+}
+.feedback p {
+    text-align: center;
+    margin-top: 10px;
+
+}
+
+.feedback form {
+    margin: 80px auto;
+    width: 600px;
+}
+
+.feedback form .inline {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.feedback form .inline > div {
+    width: 50%;
+
+}
+.feedback form label {
+    color: #6845f5;
+    font-size: 15px;
+}
+.feedback form input,
+.feedback form textarea {
+    background: #2d66af;
+    border-radius: 10px;
+    border: 0.6px solid #949393;
+    display: block;
+    width: 90%;
+    padding: 15px 10px;
+    color: #ffffff;
+    margin-top: 7px;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+.feedback form .one-line {
+    width: 96%;
+}
+.feedback form textarea {
+    resize: none;
+    height: 200px;
+}
+
+.feedback form button {
+    background: #ff9900;
+    border-radius: 5px;
+    border: 0;
+    float: right;
+    cursor: pointer;
+    color: #ffffff;
+    padding: 15px 35px;
+    font-size: 17px;
+    transition: all 500ms ease;
+
+}
+.feedback form button:hover {
+    background: #f75c03d7;
+}
+
+
+
+
+
+footer {
+    background: #7f7f8b;
+    padding: 50px 0;
+}   
+footer .blocks {
+    display: flex;
+    justify-content: space-between;
+}
+footer .blocks p {
+    width: 300px;
+    margin: 15px o;
+}
+footer .blocks h4 {
+    font-weight: 500;
+    font-size: 17px;
+}
+footer .blocks ul {
+    list-style: none;
+}
+footer .blocks ul li {
+    margin-top: 7px ;
+    opacity: 0.8;
+}
+footer hr {
+    margin: 30px 0;
+    border: 0;
+    height: 0.6px;
+    background: #fff;
+}
+footer > p {
+    text-align: center;
+}
