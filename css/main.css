@@ -69,9 +69,8 @@ header nav ul li.btn a:hover, .email .block button:hover {
 }
 
 .hero {
-    padding: 50px;
+    padding: 30px;
     display: flex;
-    
     justify-content: space-between
 }
 
@@ -90,13 +89,14 @@ header nav ul li.btn a:hover, .email .block button:hover {
     width: 900px;
 }
 
-.hero img{
-    position: absolute;
-    right: 50px;
+.hero--img img{
+    
+    
+    
 }
 
 .hero .hero--info .btn{
-    margin-top: 180px;
+    margin-top: 100px;
     padding: 15px 20x;
 }
 
